@@ -3,17 +3,19 @@ import Catg from "./Catg"
 import ShopCart from "./ShopCart"
 import "./style.css"
 
+// set const add cart and shop functionaitly 
 const Shop = ({ addToCart, shopItems }) => {
   return (
     <>
+    {/* resuse styling from css products  */}
       <section className='shop background'>
         <div className='container d_flex'>
-          <Catg />
+          {/* <Catg /> */}
 
           <div className='contentWidth'>
             <div className='heading d_flex'>
               <div className='heading-left row  f_flex'>
-                <h2>Mobile Phones</h2>
+                <h2>CRINGE Products</h2>
               </div>
               <div className='heading-right row '>
                 <span>View all</span>

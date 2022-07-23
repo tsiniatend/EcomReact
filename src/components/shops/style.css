@@ -1,6 +1,9 @@
+/* height of chead box */
 .shop .category {
   padding: 30px;
   height: 90vh;
+  align-items: center;
+ 
 }
 .chead h1 {
   font-size: 20px;
@@ -11,6 +14,7 @@
   border-left: 3px solid rgba(0, 0, 0, 0.5);
   padding-left: 70px;
 }
+/* create boxes around category, and visual transtion, set images and shadow as scroll */
 .shop .category .box {
   background-color: #f6f9fc;
   margin: 15px 0;
@@ -26,6 +30,8 @@
   background-color: #fff;
   box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
 }
+/* 
+set area for final brand button  */
 .shop .box2 {
   margin-top: 100px !important;
   text-align: center;
@@ -39,9 +45,10 @@
 }
 
 .shop .contentWidth {
-  margin-left: 30px;
+  margin-left: 150px;
 }
 
+/* set product grid and set sizing to 100% with hober transtions  */
 .grid1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

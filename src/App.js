@@ -69,12 +69,17 @@ function App() {
 
   return (
     <>
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
       <Router>
+        {/* have product item show first, add header buy count*/}
         <Header CartItem={CartItem} />
         <Switch>
+          {/* takes whatever product and routes to pages, define var */}
           <Route path='/' exact>
             <Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems} />
           </Route>
+          {/* bring result to cart page */}
           <Route path='/cart' exact>
             <Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} />
           </Route>

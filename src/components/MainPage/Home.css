@@ -1,27 +1,39 @@
+/* main title edits */
 .homeSlide h1 {
   font-size: 45px;
   line-height: 55px;
   margin: 50px 0 20px 0;
 }
+.contentWidth{
+  width: 100%;
+}
+
+/* desc edits */
 .homeSlide p {
   margin: 20px 0;
 }
+
+/* set our child dots on bottom of slider */
 .homeSlide ul {
   position: absolute;
   bottom: 20px;
 }
+
+/* outside outline make dots more visual  */
 .homeSlide ul li {
   border: 2px solid #b8b7b7;
   border-radius: 50%;
   padding: 10px;
 }
+
+/* over ride all previous edits to make transparent */
 .homeSlide ul li button {
   background: transparent !important;
   color: transparent !important;
 }
 .homeSlide ul li button::before {
   font-size: 15px !important;
-  color: #0f3460;
+  color: red;
   position: absolute;
   top: 2px;
   left: 0;

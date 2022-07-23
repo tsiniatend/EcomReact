@@ -16,6 +16,7 @@ const Navbar = () => {
           </div>
 
           <div className='navlink'>
+            {/* set our conditional that allows the switch between tabs once clicked */}
             <ul className={MobileMenu ? "nav-links-MobileMenu" : "link f_flex capitalize"} onClick={() => setMobileMenu(false)}>
               {/*<ul className='link f_flex uppercase {MobileMenu ? "nav-links-MobileMenu" : "nav-links"} onClick={() => setMobileMenu(false)}'>*/}
               <li>

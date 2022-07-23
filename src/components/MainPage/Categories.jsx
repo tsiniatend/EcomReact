@@ -1,5 +1,6 @@
 import React from "react"
 
+// call the img by name and tag
 const Categories = () => {
   const data = [
     {
@@ -13,6 +14,7 @@ const Categories = () => {
     {
       cateImg: "./images/category/cat3.png",
       cateName: "Cars",
+      
     },
     {
       cateImg: "./images/category/cat4.png",
@@ -50,7 +52,8 @@ const Categories = () => {
 
   return (
     <>
-      <div className='category'>
+    {/* target value of category img and displays it using map function each tab */}
+      {/* <div className='category'>
         {data.map((value, index) => {
           return (
             <div className='box f_flex' key={index}>
@@ -59,7 +62,7 @@ const Categories = () => {
             </div>
           )
         })}
-      </div>
+      </div> */}
     </>
   )
 }

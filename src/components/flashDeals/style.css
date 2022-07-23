@@ -1,4 +1,10 @@
 .flash {
   background: #f6f9fc;
   padding: 50px 0;
+  /* clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%); */
+  clip-path: polygon(19% 6%, 80% 6%, 100% 20%, 100% 80%, 90% 100%, 9% 100%, 0% 80%, 0% 20%);
+}
+.flashCover{
+  height: 277px;
+  width: 270px;
 }

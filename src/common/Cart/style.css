@@ -1,13 +1,14 @@
 .cart-items {
-  background: #f6f9fc;
+  background: black;
   height: auto;
   padding: 50px 0;
 }
 
+/* card sizing */
 .cart-items .cart-details {
   width: 70%;
 }
-
+/* cart display related to card */
 .cart-items .cart-total {
   width: 30%;
   margin-top: 30px;
@@ -18,6 +19,7 @@
   background: white;
   margin-top: 30px;
 }
+/* resize prodcut img and its fit in card */
 .cart-items .img {
   width: 150px;
   height: 150px;
@@ -27,6 +29,8 @@
   height: 100%;
   object-fit: contain;
 }
+
+/* h3= actual price h4=total display edits */
 .cart-items .cart-details h3 {
   font-size: 20px;
   font-weight: 500;
@@ -49,6 +53,8 @@
   text-align: right;
   margin-right: 10px;
 }
+/* 
+our add and minus (in&des buttons sizing for cart control */
 .cartControl {
   margin-top: 50px;
 }
@@ -67,6 +73,8 @@
 .desCart {
   background: #f6f9fc;
 }
+
+/* total prices edits/ make prices and titles red */
 .cart-total h4 {
   font-size: 15px;
   font-weight: 400;
