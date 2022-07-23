@@ -1,0 +1,60 @@
+.featurePage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.feat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.featureIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.featureTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px;
+  font-family: 'Lobster', cursive;
+}
+
+.featureDesc{
+  color: white;
+  width: 50%;
+  height: 100px;
+  font-family: 'Lobster', cursive;
+}
+.featureIcon{
+  width: 155px;
+   height: 185px;
+ }
+.wrapper {
+  text-align: center;
+}
+.wrapper .img {
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  margin-bottom: 20px;
+}
+.wrapper .img i {
+  font-size: 25px;
+}
+.wrapper .product {
+  padding: 30px;
+}
+.wrapper .product h3 {
+  font-weight: 500;
+}
+.wrapper p {
+  font-size: 15px;
+  margin-top: 20px;
+  color: grey;
+}
