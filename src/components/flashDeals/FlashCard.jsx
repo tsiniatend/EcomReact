@@ -51,7 +51,7 @@ const FlashCard = ({ productItems, addToCart }) => {
             <div className='box'>
               <div className='product mtop'>
                 <div className='img'>
-                  {/* call products from data */}
+                  {/* call products from data and relevant info */}
                   <span className='discount'>{productItems.discount}% Off</span>
                   <img src={productItems.cover} alt='flashCover' />
                   {/* increment add to cart method for wishlist*/}
@@ -72,8 +72,8 @@ const FlashCard = ({ productItems, addToCart }) => {
                   </div>
                   <div className='price'>
                     <h4>${productItems.price}.00 </h4>
-                    {/* step : 3  
-                     if hami le button ma click garryo bahne 
+                    {/* 
+                      once clicked add all to cart
                     */}
                     <button onClick={() => addToCart(productItems)}>
                       <i className='fa fa-plus'></i>

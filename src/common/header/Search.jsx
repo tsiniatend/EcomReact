@@ -2,6 +2,7 @@ import React from "react"
 import logo from "../../components/assets/images/cringewear.png"
 import { Link } from "react-router-dom"
 
+
 const Search = ({ CartItem }) => {
   // fixed Header
   window.addEventListener("scroll", function () {
@@ -28,8 +29,10 @@ const Search = ({ CartItem }) => {
 
           <div className='icon f_flex width'>
             <i className='fa fa-user icon-circle'></i>
-            {/* link to seperate cart page */}
+
+            {/* link to seperate cart page using icon */}
             <div className='cart'>
+              {/* if items in cart is added then relays length */}
               <Link to='/cart'>
                 <i className='fa fa-shopping-bag icon-circle'></i>
                 <span>{CartItem.length === 0 ? "" : CartItem.length}</span>

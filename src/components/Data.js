@@ -30,18 +30,12 @@ const Data = {
     },
     {
       id: 5,
-      discount: 50,
+      discount: 40,
       cover: "./images/flash/binge1.png",
-      name: "Shoes",
-      price: 100,
+      name: "Cringe Hypebeast Pack",
+      price: 200,
     },
-    {
-      id: 6,
-      discount: 50,
-      cover: "./images/flash/air1.png",
-      name: "Shoes",
-      price: 100,
-    },
+    
   ],
 }
 export default Data

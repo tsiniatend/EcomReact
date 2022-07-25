@@ -1,4 +1,4 @@
-/*------head-----------*/
+/*------head----*/
 .head {
   background-color: black;
   padding: 10px 0;
@@ -11,8 +11,8 @@
   margin-right: 30px;
   font-size: 13px;
 }
-/*------head-----------*/
-/*------search-----------*/
+/*------head------*/
+/*------search------*/
 .search {
   padding: 20px 0;
 }
@@ -78,26 +78,7 @@
   justify-content: end;
 }
 /*------search-----------*/
-.catgrories {
-  background-color: #fff1d4;
-  padding: 0px 30px;
-  border-radius: 5px;
-  height: 6vh;
-  margin-top: 5px;
-}
-/* sizing of emoji (space between) and cat title*/
-.catgrories span {
-  margin-right: 20px;
-  font-size: 30px;
-  margin-top: 10px;
-}
-.catgrories h4 {
-  font-weight: 500;
-  margin-top: 12px;
-}
-.catgrories h4 i {
-  margin-left: 10px;
-}
+
 
 /* shadow divide for visuals */
 header {
@@ -124,9 +105,7 @@ header ul li a:hover {
   color: #ff014f;
 }
 
-.open {
-  display: none;
-}
+
 /* call our javascript to set as active once scrolled, allows search bar to slide down */
 .search.active {
   height: 12vh;
@@ -166,28 +145,7 @@ header ul li a:hover {
   header .link {
     display: none;
   }
-  .close,
-  .open {
-    position: absolute;
-    top: 35px;
-    right: 20px;
-    color: #ff014f;
-    display: block;
-    font-size: 25px;
-    z-index: 999;
-  }
-  .close {
-    right: 45%;
-  }
-  .close.home-btn {
-    background: linear-gradient(145deg, #e2e8ec, #ffffff);
-    color: #ff014f;
-    border-radius: 50%;
-    padding: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-  }
+  
   .header.active {
     height: 10vh;
   }

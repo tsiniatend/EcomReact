@@ -21,11 +21,11 @@ function App() {
   Step 4 :  addToCart lai chai pass garne using props in pages and cart components
   */
 
-  //Step 1 :
+  //Step 1 : call both product data pages
   const { productItems } = Data
   const { shopItems } = Sdata
 
-  //Step 2 :
+  //Step 2 : use state to increment 
   const [CartItem, setCartItem] = useState([])
 
   //Step 4 :

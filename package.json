@@ -1,5 +1,5 @@
 {
-  "name": "bonik-shop",
+  "name": "EcomReact",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,6 +19,9 @@
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.4"
   },
+
+
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -31,6 +34,8 @@
       "react-app/jest"
     ]
   },
+
+
   "browserslist": {
     "production": [
       ">0.2%",
