@@ -40,7 +40,7 @@ const Sdata = {
       id: 12,
       cover: "./images/shops/model7.png",
       name: "Out Of Mind",
-      price: "400",
+      price: "100",
       discount: "20 ",
     },
     {
