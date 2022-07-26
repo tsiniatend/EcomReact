@@ -16,7 +16,7 @@ const connection = mysql.createConnection({
     database: process.env.DB_DATABASE 
 });
 app.get("/",(req, res) => {
- connection.query('SELECT * FROM ProductList', (err, rows, fields) => {
+ connection.query('SELECT * FROM products', (err, rows, fields) => {
     if (err) throw err;
     res.send(rows);
 });
