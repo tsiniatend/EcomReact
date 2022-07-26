@@ -8,13 +8,16 @@ app.use(cors());
 app.listen(port, () => 
 console.log(`listening on ${port}`)
 ) 
-// const connection = mysql.createConnection({
-//     host: process.env.DB_host,
-//     user: process.env.DB_user,
-//     port:  process.env.DB_port,
-//     password: process.env.DB_password,
-//     database: process.env.DB_database 
-// });
+const connection = mysql.createConnection({
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    port:  process.env.DB_PORT,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE 
+});
 app.get("/",(req, res) => {
- res.send("Hey Genius")
+ connection.query('SELECT * FROM ProductList', (err, rows, fields) => {
+    if (err) throw err;
+    res.send(rows);
+});
 })
