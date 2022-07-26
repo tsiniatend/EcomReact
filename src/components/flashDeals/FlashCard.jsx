@@ -31,7 +31,7 @@ const FlashCard = ({ productItems, addToCart }) => {
   const increment = () => {
     setCount(count + 1)
   }
-  // set requirments for flash slides
+  // set requirments for flash slides, call prev made arrows 
   const settings = {
     dots: false,
     infinite: true,

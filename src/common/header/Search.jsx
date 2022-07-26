@@ -33,7 +33,7 @@ const Search = ({ CartItem }) => {
             {/* link to seperate cart page using icon */}
             <div className='cart'>
               {/* if items in cart is added then relays length */}
-              <Link to='/cart'>
+              <Link to='./Cart'>
                 <i className='fa fa-shopping-bag icon-circle'></i>
                 <span>{CartItem.length === 0 ? "" : CartItem.length}</span>
               </Link>

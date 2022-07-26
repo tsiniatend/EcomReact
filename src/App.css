@@ -15,6 +15,7 @@ body {
 .background {
   background: #eeb68c;
   padding: 50px 0;
+  /* clip-path: polygon(19% 0, 80% 0, 100% 6%, 100% 86%, 97% 100%, 5% 100%, 0 86%, 0 6%); */
   clip-path: polygon(13% 0, 86% 0, 100% 5%, 100% 86%, 97% 100%, 5% 100%, 0 86%, 0 6%);
 }
 .container {
@@ -173,8 +174,8 @@ rating&price&button hover edits */
 .product:hover .product-like {
   opacity: 1;
 }
-/*---------product-----------*/
-/*----- control btn -------*/
+
+/*---- control btn -----*/
 .control-btn .next,
 .control-btn .prev {
   position: absolute;

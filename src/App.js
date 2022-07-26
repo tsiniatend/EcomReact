@@ -10,11 +10,10 @@ import Sdata from "./components/shops/Sdata"
 
 function App() {
   /*
-  step1 :  const { productItems } = Data 
-  lai pass garne using props
+  step1 : calll our data using props 
   
-  Step 2 : item lai cart ma halne using useState
-  ==> CartItem lai pass garre using props from  <Cart CartItem={CartItem} /> ani import garrxa in cartItem ma
+  Step 2 : add items to cart using useState 
+
  
   Step 3 :  chai flashCard ma xa button ma
 
@@ -30,14 +29,12 @@ function App() {
 
   //Step 4 :
   const addToCart = (product) => {
-    // if hamro product alredy cart xa bhane  find garna help garxa
+    // if our product is already in the cart we run function 
+    //find the product if it is already in the cart
     const productExit = CartItem.find((item) => item.id === product.id)
     // if productExit chai alredy exit in cart then will run fun() => setCartItem
-    // ani inside => setCartItem will run => map() ani yo map() chai each cart ma
-    // gayara check garxa if item.id ra product.id chai match bhayo bhane
-    // productExit product chai display garxa
-    // ani increase  exits product QTY by 1
-    // if item and product doesnt match then will add new items
+    //we run map to find if items and product match to display our products
+    //increase our productExit by 1 if item and product doesnt match then will add new items
     if (productExit) {
       setCartItem(CartItem.map((item) => (item.id === product.id ? { ...productExit, qty: productExit.qty + 1 } : item)))
     } else {
@@ -52,8 +49,8 @@ function App() {
     // if hamro product alredy cart xa bhane  find garna help garxa
     const productExit = CartItem.find((item) => item.id === product.id)
 
-    // if product is exit and its qty is 1 then we will run a fun  setCartItem
-    // inside  setCartItem we will run filter to check if item.id is match to product.id
+    // if product is exit and its qty is 1 then we will run setCartItem
+    // inside setCartItem we will run filter to check if item.id is match to product.id
     // if the item.id is doesnt match to product.id then that items are display in cart
     // else
     if (productExit.qty === 1) {
