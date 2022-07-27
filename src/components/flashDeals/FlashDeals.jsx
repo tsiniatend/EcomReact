@@ -12,7 +12,8 @@ const FlashDeals = ({ productItems, addToCart }) => {
             <i className='fa fa-bolt'></i>
             <h1><br></br>   Flash Deals</h1>
           </div>
-          <FlashCard productItems={productItems} addToCart={addToCart} />
+          {/* add our product template */}
+          <FlashCard productItems={productItems} addToCart={addToCart} key={0} />
         </div>
       </section>
     </>

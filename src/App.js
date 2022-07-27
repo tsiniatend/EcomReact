@@ -7,6 +7,7 @@ import Data from "./components/Data"
 import Cart from "./common/Cart/Cart"
 import Footer from "./common/footer/Footer"
 import Sdata from "./components/shops/Sdata"
+import Contact from "./common/header/Contact"
 
 function App() {
   /*
@@ -72,7 +73,7 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
       <Router>
-        {/* have product item show first, add header buy count*/}
+        {/* have product item show first, add header buy count, pass component into headr */}
         <Header CartItem={CartItem} />
         <Switch>
           {/* takes whatever product and routes to pages, define var */}
@@ -82,6 +83,9 @@ function App() {
           {/* bring result to cart page */}
           <Route path='/cart' exact>
             <Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} />
+          </Route>
+          <Route path='/contact' exact>
+            <Contact />
           </Route>
         </Switch>
         <Footer />
