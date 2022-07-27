@@ -13,7 +13,8 @@ body {
   background-color: #D8BFD8;
 }
 .background {
-  background: #eeb68c;
+  /* background: #eeb68c; */
+  background: #f1a66a;
   padding: 50px 0;
   /* clip-path: polygon(19% 0, 80% 0, 100% 6%, 100% 86%, 97% 100%, 5% 100%, 0 86%, 0 6%); */
   clip-path: polygon(13% 0, 86% 0, 100% 5%, 100% 86%, 97% 100%, 5% 100%, 0 86%, 0 6%);

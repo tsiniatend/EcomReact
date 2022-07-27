@@ -23,7 +23,7 @@ const Navbar = () => {
                 <Link to='/user'>CRINGE User Sccount</Link>
               </li>
               <li>
-                <Link to='/cart'>Contact CRINGE</Link>
+                <Link to='/contact'>Contact CRINGE</Link>
               </li>
             </ul>
 
