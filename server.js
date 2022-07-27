@@ -21,3 +21,17 @@ app.get("/",(req, res) => {
     res.send(rows);
 });
 })
+
+app.post("/contact", (req, res) => {
+    connection.query("INSERT INTO contacts (name, email, summary, number) VALUES (?, ?, ?, ?);", [req.body.name,req.body.email,req.body.message, req.body.phone], (err, rows, fields) => {
+        console.log(req.body);
+        if (err) throw err;
+        res.redirect('back');
+    })
+})
+app.get("/contact", (req, res) => {
+    connection.query('SELECT * FROM contacts', (err, rows, fields) => {
+        if (err) throw err;
+        res.send(rows);
+    });
+})
