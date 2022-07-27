@@ -11,14 +11,10 @@ import Contact from "./common/header/Contact"
 
 function App() {
   /*
-  step1 : calll our data using props 
+  step1 : call our data using props 
   
   Step 2 : add items to cart using useState 
 
- 
-  Step 3 :  chai flashCard ma xa button ma
-
-  Step 4 :  addToCart lai chai pass garne using props in pages and cart components
   */
 
   //Step 1 : call both product data pages
@@ -33,14 +29,17 @@ function App() {
     // if our product is already in the cart we run function 
     //find the product if it is already in the cart
     const productExit = CartItem.find((item) => item.id === product.id)
-    // if productExit chai alredy exit in cart then will run fun() => setCartItem
-    //we run map to find if items and product match to display our products
+   git 
+     //we run map to find if items and product match to display our products
+    
     //increase our productExit by 1 if item and product doesnt match then will add new items
     if (productExit) {
       setCartItem(CartItem.map((item) => (item.id === product.id ? { ...productExit, qty: productExit.qty + 1 } : item)))
     } else {
       // but if the product doesnt exit in the cart that mean if card is empty
       // then new product is added in cart  and its qty is initalize to 1
+      //we run map to find if items and product match to display our products
+    //increase our productExit by 1 if item and product doesnt match then will add new items
       setCartItem([...CartItem, { ...product, qty: 1 }])
     }
   }
@@ -57,8 +56,12 @@ function App() {
     if (productExit.qty === 1) {
       setCartItem(CartItem.filter((item) => item.id !== product.id))
     } else {
-      // if product is exit and qty  of that produt is not equal to 1
-      // then will run function call setCartItem
+
+
+        //we run map to find if items and product match to display our products
+    //increase our productExit by 1 if item and product doesnt match then will add new items
+       // if product is exit and its qty is 1 then we will run setCartItem
+    // inside setCartItem we will run filter to check if item.id is match to product.id
       // inside setCartItem we will run map method
       // this map() will check if item.id match to produt.id  then we have to desc the qty of product by 1
       setCartItem(CartItem.map((item) => (item.id === product.id ? { ...productExit, qty: productExit.qty - 1 } : item)))
