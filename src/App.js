@@ -44,9 +44,9 @@ function App() {
     }
   }
 
-  // Stpe: 6
+  // Step: 6
   const decreaseQty = (product) => {
-    // if hamro product alredy cart xa bhane  find garna help garxa
+   
     const productExit = CartItem.find((item) => item.id === product.id)
 
     // if product is exit and its qty is 1 then we will run setCartItem
