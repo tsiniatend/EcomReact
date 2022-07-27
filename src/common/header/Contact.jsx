@@ -15,7 +15,7 @@ const Contact = () => {
           className="input-field textarea-field"
           placeholder="Your message"
           defaultValue={""}
-          name="text"
+          name="message"
         />
         <button type="sumbit" value="send" className="send">
           Send Message
