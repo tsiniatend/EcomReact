@@ -35,7 +35,7 @@ const SlideCard = () => {
                   {/* called from our slider js */}
                   <h1>{value.title}</h1>
                   <p>{value.desc}</p>
-                  <button className='btn-primary'>Visit Collections</button>
+                  <button className='btn-primary'>Visit CRINGE Collections</button>
                 </div>
                 <div className='right'>
                   <img src={value.cover} alt='' />

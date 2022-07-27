@@ -29,7 +29,7 @@ function App() {
     // if our product is already in the cart we run function 
     //find the product if it is already in the cart
     const productExit = CartItem.find((item) => item.id === product.id)
-   git 
+   
      //we run map to find if items and product match to display our products
     
     //increase our productExit by 1 if item and product doesnt match then will add new items
